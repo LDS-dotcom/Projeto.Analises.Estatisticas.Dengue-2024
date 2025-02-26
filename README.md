@@ -207,6 +207,7 @@ sugere que a distribuição de casos de dengue por faixa etária está associada
 ## Códigos Python
 
 <br>
+
 ### Limpeza dos dados retirando NaN e coluna DATA
 
 ```python
@@ -426,6 +427,25 @@ Margem de erro: 0.13
 
 
 # Análise dos Dados
+
+### 1.Distribuição dos Casos
+
+- Quais são as Unidades da Federação mais afetadas pela dengue?
+- Existe uma correlação significativa entre a densidade populacional e a incidência de casos de dengue?
+- Existe correlação entre as variáveis?
+
+### Perfil Etário e de Gênero
+
+- Qual é a faixa etária mais afetada pela dengue?
+- Há uma diferença significativa na incidência de dengue entre homens e mulheres?
+
+### Fatores Regionais
+
+- Existem regiões específicas que apresentam maior vulnerabilidade à dengue?
+- Quais são as condições ambientais e socioeconômicas que podem influenciar a distribuição geográfica dos casos?
+
+
+
 
 ## O que eu descobri?
 
