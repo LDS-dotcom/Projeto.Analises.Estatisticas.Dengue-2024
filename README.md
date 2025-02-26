@@ -427,24 +427,25 @@ Margem de erro: 0.13
 
 
 # Análise dos Dados
+<br>
 
-### 1.Distribuição dos Casos
+Questões importantes a serem discutidas
 
-- Quais são as Unidades da Federação mais afetadas pela dengue?
-- Existe uma correlação significativa entre a densidade populacional e a incidência de casos de dengue?
-- Existe correlação entre as variáveis?
+-Distribuição dos Casos
+ - Quais são as Unidades da Federação mais afetadas pela dengue?
+ - Existe uma correlação significativa entre a densidade populacional e a incidência de casos de dengue?
+ - Existe correlação entre as variáveis?
 
-### Perfil Etário e de Gênero
+- Perfil Etário e de Gênero
+  - Qual é a faixa etária mais afetada pela dengue?
+  - Há uma diferença significativa na incidência de dengue entre homens e mulheres?
 
-- Qual é a faixa etária mais afetada pela dengue?
-- Há uma diferença significativa na incidência de dengue entre homens e mulheres?
+- Fatores Regionais
+  - Existem regiões específicas que apresentam maior vulnerabilidade à dengue?
+  - Quais são as condições ambientais e socioeconômicas que podem influenciar a distribuição geográfica dos casos?
 
-### Fatores Regionais
-
-- Existem regiões específicas que apresentam maior vulnerabilidade à dengue?
-- Quais são as condições ambientais e socioeconômicas que podem influenciar a distribuição geográfica dos casos?
-
-
+<br>
+<br>
 
 
 ## O que eu descobri?
