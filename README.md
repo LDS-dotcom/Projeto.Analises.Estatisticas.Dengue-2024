@@ -16,6 +16,7 @@
   - [Estrutura do Dataset](#estrutura-do-dataset)
   - [Limpeza dos Dados](#limpeza-dos-dados)
 - [Técnicas Estatísticas Utilizadas](#tecnicas-estatisticas-utilizadas)
+- [Códigos Python](#codigos-python)
 - [Análise dos Dados](#analise-dos-dados)
    - [O que descobrimos?](#o-que-descobrimos)
    - [Recomendações](#recomendacoes)
