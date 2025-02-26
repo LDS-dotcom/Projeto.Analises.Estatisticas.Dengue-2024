@@ -78,6 +78,8 @@ A estrutura do trabalho inclui a coleta e preparação do conjunto de
 dados, a análise exploratória com estatísticas descritivas e visualização gráfica, a aplicação de testes estatísticos para verificar a existência de padrões significativos e, por fim, a discussão dos resultados obtidos.  
 
 
+<br>
+<br>
 ## Ferramentas
 
 | Ferramentas |         Propósito                                        |
@@ -155,7 +157,7 @@ No projeto, foi realizada uma análise descritiva dos dados coletados para enten
 imagem
 
 <br>
-
+<br>
 
 # Testes Estatísticos  
 ## Teste t de Student 
@@ -181,6 +183,7 @@ Ou seja, entre Hipótese Nula (H0H_0), onde não há diferença significativa en
 Como o p-valor é muito pequeno, menor que qualquer nível de significância 
 comum (como 0.05 ou 0.01), rejeitamos a hipótese nula. Isso significa que há uma diferença estatisticamente significativa entre as médias das idades dos homens e das mulheres.
 
+<br>
 <br>
 
 
@@ -416,6 +419,7 @@ Margem de erro: 0.13
 
 
 
+<br>
 <br>
 <br>
 
