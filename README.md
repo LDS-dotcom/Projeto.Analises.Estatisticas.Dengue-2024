@@ -1,4 +1,6 @@
 # Projeto de Estatistica Descritiva e Inferencial sobre a Dengue em 2024 <br>
+
+![Image](https://github.com/user-attachments/assets/22572662-48b6-4558-ae4f-213992773dec)
 <br>
 <br>
 
@@ -126,12 +128,32 @@ dados, a análise exploratória com estatísticas descritivas e visualização g
 
 
 Durante a exploração inicial dos dados, foram realizadas análises básicas, como o cálculo de estatísticas descritivas (média, mediana, desvio padrão) e a geração de gráficos para visualizar a distribuição dos casos de dengue por faixa etária, sexo e localização geográfica.
+<br>
+<br>
+<br>
+### Casos Por Gênero
+![Image](https://github.com/user-attachments/assets/dd3eda0a-2f03-40e6-a77d-aac33605bcbc)
 
-imagem
+<br>
+<br>
+<br>
+
+### Casos Por Região
+![Image](https://github.com/user-attachments/assets/aab08d3d-5a77-4f6b-ab3d-dc364e96288c)
 
 <br>
 <br>
 <br>
+
+### Casos Por UF
+![Image](https://github.com/user-attachments/assets/3a04090b-b7b1-4fb3-a9a0-1f224416499c)
+
+<br>
+<br>
+<br>
+
+
+
 
 
 
@@ -153,9 +175,31 @@ O pré-processamento dos dados inclui:
 ## Estatística Descritiva 
 
 No projeto, foi realizada uma análise descritiva dos dados coletados para entender melhor a distribuição dos casos de dengue. As estatísticas descritivas fornecem um resumo dos dados e ajudam a identificar padrões e tendências significativas. Abaixo estão os cálculos das estatísticas descritivas realizadas: 
+<br>
+<br>
+<br>
 
+![Image](https://github.com/user-attachments/assets/9d8100c5-1357-4fed-a03e-245a15b62e42)
+<br>
+<br>
+<br>
 
-imagem
+![Image](https://github.com/user-attachments/assets/7dc50519-f639-4bf7-9128-b53aae287f02)
+<br>
+<br>
+<br>
+
+![Image](https://github.com/user-attachments/assets/87e19f24-358f-4456-8db7-5a95ea7cc567)
+<br>
+<br>
+<br>
+
+![Image](https://github.com/user-attachments/assets/cbdb487e-2b4f-4013-9703-66148a51b244)
+<br>
+<br>
+<br>
+![Image](https://github.com/user-attachments/assets/2dc682fb-7349-411a-ae92-3c99938569ff)
+
 
 <br>
 <br>
@@ -432,9 +476,9 @@ Margem de erro: 0.13
 Questões importantes a serem discutidas
 
 - Distribuição dos Casos
- - Quais são as Unidades da Federação mais afetadas pela dengue?
- - Existe uma correlação significativa entre a densidade populacional e a incidência de casos de dengue?
- - Existe correlação entre as variáveis?
+  - Quais são as Unidades da Federação mais afetadas pela dengue?
+  - Existe uma correlação significativa entre a densidade populacional e a incidência de casos de dengue?
+  - Existe correlação entre as variáveis?
 
 - Perfil Etário e de Gênero
   - Qual é a faixa etária mais afetada pela dengue?
@@ -457,8 +501,13 @@ variação significativa entre as diferentes faixas etárias.
 De 21-30 anos apresenta o maior número de casos de dengue, seguida pelas 
 faixas de 31-40 e 41-50 anos. Isso sugere que adultos jovens e de meia-idade são os mais afetados. As faixas etárias extremas, ou seja, os muito jovens (0-10 anos) e os muito idosos (81-90 e 91-100 anos), têm menos casos de dengue. Isso pode indicar maior proteção ou menos exposição a fatores de risco, ou pode refletir práticas de prevenção mais rigorosas para esses grupos.
 
+<br>
+<br>
 
- imagem
+![Image](https://github.com/user-attachments/assets/371dc01e-9150-465e-b79f-ed94ed401fd6)
+
+<br>
+<br>
 
  Observa-se um declínio geral no número de casos conforme a idade avança, 
 especialmente após os 60 anos. Isso pode ser devido a vários fatores, incluindo mudanças no comportamento de exposição, imunidade adquirida ao longo do tempo, ou diferenças na vigilância e notificação. 
@@ -475,9 +524,13 @@ indeterminado (I), totalizando 465 casos. Esse número é relativamente pequeno
 comparado ao total, mas ainda é importante para assegurar a qualidade e a 
 completude dos dados.
 
+<br>
+<br>
 
-imagem
+![Image](https://github.com/user-attachments/assets/b56ec072-ce77-47ac-88eb-4acdd421634f)
 
+<br>
+<br>
 
 A diferença na incidência entre homens e mulheres pode ser atribuída a fatores biológicos, comportamentais ou sociais. Por exemplo, mulheres podem ter mais interação com ambientes domésticos onde o mosquito Aedes aegypti tende a proliferar. A maior incidência em mulheres pode impactar de forma diferente o sistema de saúde, especialmente considerando questões de saúde reprodutiva e cuidados infantis, onde a presença feminina é mais forte.
 
@@ -486,9 +539,13 @@ A diferença na incidência entre homens e mulheres pode ser atribuída a fatore
 <br>
 
 ### Distribuição Geográfica 
+<br>
+<br>
 
-imagem
+![Image](https://github.com/user-attachments/assets/356650f2-aa60-432b-af40-e37dcdcf61e8)
 
+<br>
+<br>
 
 - A região Sudeste apresenta o maior número de casos, com 135.037 
 notificações. Isso pode ser atribuído à alta densidade populacional, maior 
@@ -512,7 +569,18 @@ algumas áreas pode contribuir para o menor número de casos.
 
 ### Correlação Entre Variáveis
 
-imagem
+<br>
+<br>
+
+![Image](https://github.com/user-attachments/assets/ea7a0fc9-a03c-40d4-8150-972de51f4581)
+
+<br>
+<br>
+
+![Image](https://github.com/user-attachments/assets/f6088a87-1d89-4cff-ae85-1a0e39a463de)
+
+<br>
+<br>
 
 A dengue afeta pessoas de todas as idades, mas a maior concentração de 
 casos está em adultos jovens e de meia-idade (20 a 50 anos). As regiões apresentam padrões semelhantes de distribuição etária, o que pode indicar que fatores ambientais e sociais influenciam a transmissão da dengue de maneira semelhante em todo o Brasil. O grande número de outliers sugere que há casos extremos (provavelmente idosos), o que pode ser relevante para políticas de saúde pública focadas em grupos mais vulneráveis. 
