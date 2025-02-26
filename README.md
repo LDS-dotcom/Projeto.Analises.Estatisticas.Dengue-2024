@@ -80,6 +80,7 @@ dados, a análise exploratória com estatísticas descritivas e visualização g
 
 <br>
 <br>
+
 ## Ferramentas
 
 | Ferramentas |         Propósito                                        |
