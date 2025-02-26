@@ -1,4 +1,4 @@
-# Projeto de Estatisticas Descritiva e Inferencia sobre a Dengue - 2024 <br>
+# Projeto de Estatisticas Descritiva e Inferencial sobre a Dengue em 2024 <br>
 <br>
 <br>
 
