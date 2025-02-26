@@ -431,7 +431,7 @@ Margem de erro: 0.13
 
 Questões importantes a serem discutidas
 
--Distribuição dos Casos
+- Distribuição dos Casos
  - Quais são as Unidades da Federação mais afetadas pela dengue?
  - Existe uma correlação significativa entre a densidade populacional e a incidência de casos de dengue?
  - Existe correlação entre as variáveis?
@@ -588,7 +588,7 @@ resposta rápida e eficaz aos surtos de dengue.
 
 Melhoria das Infraestruturas de Saúde:
 
--Reforço das Unidades de Saúde 
+- Reforço das Unidades de Saúde 
 Objetivo: Garantir que as unidades de saúde estejam preparadas para lidar 
 com surtos de dengue. 
 Ações: Equipar unidades de saúde com os recursos necessários para diagnóstico e tratamento da dengue. 
@@ -604,7 +604,7 @@ necessário.
 
 Envolvimento da Comunidade: 
 
--Educação Comunitária 
+- Educação Comunitária 
 Objetivo: Envolver as comunidades locais na prevenção da dengue. 
 Ações: Organizar mutirões de limpeza e eliminação de criadouros do mosquito 
 nas comunidades. 
