@@ -1,4 +1,4 @@
-# Projeto.Analises.Estatisticas.Dengue-2024 <br>
+# Projeto de Estatisticas Descritiva e Inferencia sobre a Dengue - 2024 <br>
 <br>
 <br>
 
@@ -204,6 +204,7 @@ sugere que a distribuição de casos de dengue por faixa etária está associada
 
 <br>
 ### Limpeza dos dados retirando NaN e coluna DATA
+
 ```python
 
 
@@ -218,6 +219,7 @@ dt_dengue = pd.read_csv('Dengue_2024_final.csv')
 dt_dengue = dt_dengue.dropna()
 dt_dengue = dt_dengue.drop('DATA', axis=1)
 print(dt_dengue.isnull().sum())
+
 ```
 <br>
 <br>
