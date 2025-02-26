@@ -1,14 +1,6 @@
 # Projeto.Analises.Estatisticas.Dengue-2024 <br>
-
 <br>
 <br>
-<br>
-
-
-<br>
-<br>
-<br>
-
 # Sumário
 
  [Objetivo](#objetivo)
@@ -26,10 +18,6 @@
    - [Recomendações](#recomendacoes)
    - [Plano de Ação](#plano-de-acao)
  
-
-
-
-
 
 
 
@@ -209,6 +197,29 @@ Ou seja, rejeitamos a Hipótese Nula. Um p-valor extremamente pequeno,
 sugere que a distribuição de casos de dengue por faixa etária está associada ao sexo dos infectados. 
 
 <br>
+<br>
+
+## Códigos Python
+
+<br>
+
+```python
+
+# Limpeza dos dados retirando NaN e coluna DATA
+
+import pandas as pd
+import numpy as np
+import scipy.stats as stats
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+dt_dengue = pd.read_csv('Dengue_2024_final.csv')
+dt_dengue = dt_dengue.dropna()
+dt_dengue = dt_dengue.drop('DATA', axis=1)
+print(dt_dengue.isnull().sum())
+```
+
 
 # Análise dos Dados
 
