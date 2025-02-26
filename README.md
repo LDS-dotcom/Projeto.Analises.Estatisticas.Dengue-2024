@@ -1,9 +1,10 @@
 # Projeto.Analises.Estatisticas.Dengue-2024 <br>
 <br>
 <br>
+
 # Sumário
 
- [Objetivo](#objetivo)
+- [Objetivo](#objetivo)
 - [Fonte dos Dados](#fonte-dos-dados)
 - [Desenvolvimento](#desenvolvimento)
 - [Metodologia](#metodologia)
@@ -202,10 +203,9 @@ sugere que a distribuição de casos de dengue por faixa etária está associada
 ## Códigos Python
 
 <br>
-
+### Limpeza dos dados retirando NaN e coluna DATA
 ```python
 
-# Limpeza dos dados retirando NaN e coluna DATA
 
 import pandas as pd
 import numpy as np
@@ -219,6 +219,203 @@ dt_dengue = dt_dengue.dropna()
 dt_dengue = dt_dengue.drop('DATA', axis=1)
 print(dt_dengue.isnull().sum())
 ```
+<br>
+<br>
+
+### Estatísticas descritivas gerais
+
+```python
+
+print('\nEstatísticas descritivas gerais',dt_dengue.describe())
+
+
+#Distribuição por sexo.
+sexo = dt_dengue['SEXO'].value_counts()
+print('\nDistribuição por',sexo)
+
+
+#Casos por região
+casos_regiao = dt_dengue['REGIÃO'].value_counts()
+print('\nCASOS POR',casos_regiao)
+
+
+#Média de idade dos infectados.
+mean_idade = dt_dengue['IDADE'].mean()
+print('\nMÉDIA DE IDADE DOS INFECTADOS:',round(mean_idade,0))
+
+#Idade média de homens e mulheres com dengue
+
+homens = dt_dengue[dt_dengue['SEXO'] == 'M']
+media_idade_homens = homens['IDADE'].mean()
+print(f"Média de idade dos homens: {media_idade_homens:.2f}")
+
+
+mulheres = dt_dengue[dt_dengue['SEXO'] == 'F']
+media_idade_mulheres = mulheres['IDADE'].mean()
+print(f"Média de idade das mulheres: {media_idade_mulheres:.2f}")
+```
+<br>
+<br>
+
+### Casos por UF
+
+```python
+dt_dengue.groupby('UF').size().sort_values(ascending=False).plot(kind='bar', title='Casos por UF')
+plt.show()
+
+```
+<br>
+<br>
+
+### Casos por Região
+
+```python
+dt_dengue.groupby('REGIÃO').size().sort_values(ascending=False).plot(kind='bar', title='Casos por REGIÃO')
+plt.show()
+```
+
+<br>
+<br>
+
+### Casos por Sexo
+
+```python
+dt_dengue.groupby('SEXO').size().sort_values(ascending=False).plot(kind='bar', title='Casos por sexo')
+```
+
+<br>
+<br>
+
+### Teste qui-quadrado 
+
+```python
+bins = [0,10,20,30,40,50,60,70,80,90,100]
+labels = ['0-10','11-20','21-30','31-40','41-50','51-60','61-70','71-80','81-90','91-100']
+
+faixa_etaria_conta = dt_dengue['faixa_etaria'] = pd.cut(dt_dengue['IDADE'], bins=bins, labels=labels, right=False)
+print(dt_dengue['faixa_etaria'].value_counts())
+
+
+# Criar uma tabela de contingência (frequência de casos por sexo e faixa etária)
+contingency_table = pd.crosstab(dt_dengue['faixa_etaria'], dt_dengue['SEXO'])
+
+# Realizar o teste qui-quadrado
+chi2, p_value, dof, expected = stats.chi2_contingency(contingency_table)
+
+# Exibir os resultados
+print(f'\nChi2: {chi2}, P-value: {p_value}')
+
+Chi2: 1615.869373765136, P-value: 0.0
+```
+
+
+
+<br>
+<br>
+
+### Visualização de Casos por Faixa Etária
+
+```python
+dt_dengue.groupby('faixa_etaria').size().sort_values(ascending=False).plot(kind='bar', title='Casos por Faixa Etária')
+plt.show()
+```
+
+
+
+<br>
+<br>
+
+### Teste t de student
+
+```python
+from scipy.stats import ttest_ind
+
+# Filtrando por sexo
+homens = dt_dengue[dt_dengue['SEXO'] == 'M']['IDADE'].dropna()
+mulheres = dt_dengue[dt_dengue['SEXO'] == 'F']['IDADE'].dropna()
+
+# Teste t de Student
+t_stat, p_value = ttest_ind(homens, mulheres, equal_var=False)  # equal_var=False se variâncias forem diferentes
+
+print(f'Teste t: estatística={t_stat}, p-valor={p_value}')
+
+Teste t: estatística=-34.22477568316503, p-valor=4.709115557557269e-256
+```
+
+
+
+
+
+
+
+<br>
+<br>
+
+### Distribuição das Idades por Região
+
+```python
+dt_dengue.groupby('REGIÃO')['IDADE'].mean().sort_values()
+dt_dengue.groupby('UF')['IDADE'].mean().sort_values()
+
+plt.figure(figsize=(12, 6))
+sns.boxplot(x=dt_dengue['REGIÃO'], y=dt_dengue['IDADE'])
+plt.xticks(rotation=45)
+plt.title('Distribuição das idades por região')
+plt.show()
+```
+
+
+
+
+<br>
+<br>
+
+### Distribuição do Sexo por Região
+
+```python
+dt_dengue.groupby(['UF', 'SEXO'])['IDADE'].mean().unstack()
+```
+
+
+
+
+<br>
+<br>
+
+### Intervalo de confiança e Margem de Erro
+
+```python
+media_amostral = 37.22
+desvio_padrao_amostral = 19.62
+tamanho_amostra = 91587
+conf_95 = 0.95
+
+# Valor crítico Z para 95% de confiança
+Z_95 = 1.96
+
+# Calcular o erro padrão (EP)
+EP = desvio_padrao_amostral / np.sqrt(tamanho_amostra)
+
+# Calcular a margem de erro
+margem_erro = Z_95 * EP
+
+# Intervalo de confiança
+IC_95_lower = media_amostral - margem_erro
+IC_95_upper = media_amostral + margem_erro
+
+print(f"Intervalo de confiança 95%: [{IC_95_lower:.2f}, {IC_95_upper:.2f}]")
+print(f"Margem de erro: {margem_erro:.2f}")
+
+Intervalo de confiança 95%: [37.09, 37.35]
+Margem de erro: 0.13
+```
+
+
+
+
+
+<br>
+<br>
 
 
 # Análise dos Dados
